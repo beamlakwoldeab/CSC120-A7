@@ -1,5 +1,7 @@
-public class Building {
+import javax.sound.sampled.SourceDataLine;
 
+public class Building {
+ 
     protected String name;
     protected String address;
     protected int nFloors;
@@ -20,7 +22,7 @@ public class Building {
     public Building(String name, String address) {
         this(name, address, 1); // Call full constructor with hard-coded # floors
     }
-
+    
     /* Full constructor */
     public Building(String name, String address, int nFloors) {
         if (name != null) { this.name = name; }
